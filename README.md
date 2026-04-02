@@ -25,3 +25,9 @@ Below are the video demonstrations of the project:
 
 ## Video 2
 [Click here to watch Video 2](https://drive.google.com/file/d/1lkmCVcdDB8_wSqcxtGJw1IhxFyFS7-rC/view?usp=share_link)
+
+
+##  Design Files
+
+- [Colour Palette (Figma)](https://www.figma.com/design/Cc3M7J4rybtGwBl7tjuLuq/Untitled?m=dev&t=b7eCMCyNWXM5KaI3-1)
+- [Layout Design (Figma)](https://www.figma.com/design/x7nFYKY6fGVRMNO9l5cgl7/Untitled?m=dev&t=b7eCMCyNWXM5KaI3-1)
