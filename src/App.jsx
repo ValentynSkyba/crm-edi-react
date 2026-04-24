@@ -11,21 +11,16 @@ import ContactPage from "./pages/Contact/ContactPage.jsx";
 function App() {
   return (
     <>
-
       <BrowserRouter>
-              <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/food" element={<FoodPage />} />
           <Route path="/drinks" element={<DrinksPage />} />
-          <Route
-            path="/contact"
-            element={<ContactPage />}
-          />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
-         <Footer />
+        <Footer />
       </BrowserRouter>
-     
     </>
   );
 }
