@@ -15,10 +15,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/src/pages/Food/FoodPage" element={<FoodPage />} />
-          <Route path="/src/pages/Drinks/DrinksPage" element={<DrinksPage />} />
+          <Route path="src/pages/Food/FoodPage" element={<FoodPage />} />
+          <Route path="src/pages/Drinks/DrinksPage" element={<DrinksPage />} />
           <Route
-            path="/src/pages/Contact/ContactPage"
+            path="src/pages/Contact/ContactPage"
             element={<ContactPage />}
           />
         </Routes>
