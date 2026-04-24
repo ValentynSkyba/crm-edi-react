@@ -1,4 +1,5 @@
 import s from "./header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,16 +8,16 @@ const Header = () => {
         <h1 className={s.logo}>CRM Edi</h1>
         <ul className={s.navLinks}>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/src/pages/Food/FoodPage">Food</a>
+            <Link to="/food">Food</Link>
           </li>
           <li>
-            <a href="/src/pages/Drinks/DrinksPage">Drinks</a>
+            <Link to="/drinks">Drinks</Link>
           </li>
           <li>
-            <a href="/src/pages/Contact/ContactPage">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
