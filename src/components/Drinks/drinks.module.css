@@ -1,0 +1,101 @@
+.featuredDrinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 0;
+}
+
+.drinkCard {
+  background: var(--mainwhite);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drinkCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.drinkImageWrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.drinkImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.drinkCard:hover .drinkImage {
+  transform: scale(1.06);
+}
+
+.drinkBadge {
+  background-color: var(--maincolor);
+  color: var(--mainwhite);
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.accordionBtn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--border);
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--text);
+  transition: background-color 0.2s ease;
+}
+
+.accordionBtn:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.accordionIcon {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--maincolor);
+}
+
+.accordionOpen {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.accordionContent {
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .featuredDrinks {
+    grid-template-columns: 1fr;
+  }
+}

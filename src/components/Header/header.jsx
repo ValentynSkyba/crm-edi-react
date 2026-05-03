@@ -1,27 +1,30 @@
+import { Link } from "react-router-dom";
 import s from "./header.module.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className={s.header}>
+    <header className={s.header}>
       <nav className={s.navbar}>
-        <h1 className={s.logo}>CRM Edi</h1>
+        <Link to="/" className={s.logoLink}>
+          <img src="/logo/logo.svg" alt="Bite Me Cafe" className={s.logo} />
+        </Link>
         <ul className={s.navLinks}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className={s.link}>Home</Link>
           </li>
           <li>
-            <Link to="/food">Food</Link>
+            <Link to="/food" className={s.link}>Food</Link>
           </li>
           <li>
-            <Link to="/drinks">Drinks</Link>
+            <Link to="/drinks" className={s.link}>Drinks</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" className={s.link}>Contact</Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

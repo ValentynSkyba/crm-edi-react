@@ -1,0 +1,81 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.featuredItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 220px;
+}
+
+.reversed {
+  direction: rtl;
+}
+
+.reversed > * {
+  direction: ltr;
+}
+
+.featuredImageWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.featuredImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.featuredItem:hover .featuredImage {
+  transform: scale(1.05);
+}
+
+.featuredInfo {
+  background-color: var(--secondcolor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.featuredBadge {
+  background-color: var(--maincolor);
+  color: var(--mainwhite);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.3px;
+}
+
+.featuredDescription {
+  color: var(--mainwhite);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .featuredItem {
+    grid-template-columns: 1fr;
+  }
+
+  .reversed {
+    direction: ltr;
+  }
+
+  .featuredImageWrapper {
+    height: 200px;
+  }
+
+  .featuredInfo {
+    padding: 1.5rem;
+  }
+}
