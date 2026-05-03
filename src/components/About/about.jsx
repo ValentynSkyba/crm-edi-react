@@ -3,16 +3,22 @@ import s from "./about.module.css";
 
 const About = () => {
   return (
-    <div className={s.about}>
-      <h1>About Us</h1>
-      <p className={s.description}>Welcome to our company!</p>
+    <section className={s.about}>
+      <h2 className={s.title}>Our History</h2>
       <p className={s.description}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quia,
-        quibusdam cupiditate maxime debitis quod possimus mollitia perferendis.
-        Quis suscipit ducimus dolorem, neque sequi dignissimos aliquam eum optio
-        provident commodi.
+        Welcome to Bite Me Cafe — a place where passion meets flavor. Founded with 
+        a love for exceptional coffee and wholesome food, our cafe has grown from a 
+        small neighborhood spot into a beloved destination for locals and visitors alike. 
+        Every cup we brew and every dish we serve tells a story of dedication, quality 
+        ingredients, and the warmth of community.
       </p>
-    </div>
+      <p className={s.description}>
+        Our journey began with a simple idea: to create a space where people could slow 
+        down, savor the moment, and connect over great food and drinks. From our carefully 
+        sourced coffee beans to our freshly baked pastries and hearty savory dishes, we 
+        take pride in offering an experience that feels like home — only better.
+      </p>
+    </section>
   );
 };
 

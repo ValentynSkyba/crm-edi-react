@@ -4,7 +4,10 @@ import s from "./footer.module.css";
 const Footer = () => {
   return (
     <footer className={s.footer}>
-      <p>© 2026 CRM Edi. All rights reserved.</p>
+      <div className={s.footerContent}>
+        <p className={s.brand}>Bite Me Cafe</p>
+        <p className={s.copy}>© 2026 Bite Me Cafe. All rights reserved.</p>
+      </div>
     </footer>
   );
 };

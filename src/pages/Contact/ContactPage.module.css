@@ -1,0 +1,114 @@
+.contactPage {
+  width: 100%;
+}
+
+/* People Section */
+.peopleSection {
+  background: var(--grey-bg);
+  padding: 1.5rem;
+}
+
+.peopleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.peopleImageWrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.peopleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.peopleImageWrapper:hover .peopleImage {
+  transform: scale(1.04);
+}
+
+/* Details Section */
+.detailsSection {
+  padding: 0;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.detailsInfo {
+  background-color: var(--secondcolor);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.detailsTitle {
+  color: var(--mainwhite);
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.detailIcon {
+  font-size: 1.25rem;
+  margin-top: 2px;
+}
+
+.detailLabel {
+  color: var(--mainwhite);
+  font-weight: 600;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detailValue {
+  color: var(--mainwhite);
+  font-size: 0.95rem;
+}
+
+.detailsImageWrapper {
+  overflow: hidden;
+}
+
+.detailsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Section */
+.formSection {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .peopleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .detailsImageWrapper {
+    height: 250px;
+  }
+}
