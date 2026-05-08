@@ -80,8 +80,7 @@ input {
 button {
   padding: 8px;
   border: none;
-  background: #c59d5f;
-  olor: var(--mainwhite);
+  background: var(--secondcolor);
   border-radius: 5px;
   cursor: pointer;
 }
