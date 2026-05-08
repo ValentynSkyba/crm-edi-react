@@ -21,7 +21,9 @@ const Footer = () => {
           <p>
             <a href="tel:+441234567890">+44 123 456 7890</a>
           </p>
-          <p>info@biteme.com</p>
+          <p>
+            <a href="mailto:info@biteme.com">info@biteme.com</a>
+          </p>
         </div>
 
         <div class="footer-column">
