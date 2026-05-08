@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import s from "./header.module.css";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,16 +10,24 @@ const Header = () => {
         </Link>
         <ul className={s.navLinks}>
           <li>
-            <Link to="/" className={s.link}>Home</Link>
+            <Link to="/" className={s.link}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/food" className={s.link}>Food</Link>
+            <Link to="/food" className={s.link}>
+              Food
+            </Link>
           </li>
           <li>
-            <Link to="/drinks" className={s.link}>Drinks</Link>
+            <Link to="/drinks" className={s.link}>
+              Drinks
+            </Link>
           </li>
           <li>
-            <Link to="/contact" className={s.link}>Contact</Link>
+            <Link to="/contact" className={s.link}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
