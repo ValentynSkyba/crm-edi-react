@@ -1,8 +1,8 @@
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import Header from "./components/Header/header.jsx";
-import Footer from "./components/Footer/footer.jsx";
-import { Routes, Route } from "react-router-dom";
+
 import Home from "./pages/HomePage/HomePage.jsx";
 import FoodPage from "./pages/Food/FoodPage.jsx";
 import DrinksPage from "./pages/Drinks/DrinksPage.jsx";
@@ -20,7 +20,6 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
-      <Footer />
     </>
   );
 }
